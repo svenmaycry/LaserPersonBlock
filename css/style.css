@@ -1,0 +1,559 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-Black.woff2") format("woff2"), url("../fonts/CeraPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-BlackItalic.woff2") format("woff2"), url("../fonts/CeraPro-BlackItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-BoldItalic.woff2") format("woff2"), url("../fonts/CeraPro-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-MediumItalic.woff2") format("woff2"), url("../fonts/CeraPro-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-LightItalic.woff2") format("woff2"), url("../fonts/CeraPro-LightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-RegularItalic.woff2") format("woff2"), url("../fonts/CeraPro-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-Thin.woff2") format("woff2"), url("../fonts/CeraPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  font-display: swap;
+  src: url("../fonts/CeraPro-ThinItalic.woff2") format("woff2"), url("../fonts/CeraPro-ThinItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #000;
+  line-height: 1;
+  font-family: "Ubuntu";
+  font-size: 1rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Ubuntu";
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.top-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E7F0FB));
+  background: -o-linear-gradient(top, #FFFFFF 0%, #E7F0FB 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #E7F0FB 100%);
+}
+
+.top-section__container {
+  max-width: 83.125rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 250px;
+     -moz-column-gap: 250px;
+          column-gap: 250px;
+}
+
+.item-columns {
+  max-width: 453px;
+}
+
+@supports (margin-top: clamp( 1.25rem , -1rem  +  11.25vw , 12.5rem )) {
+  .item-columns {
+    margin-top: clamp( 1.25rem , -1rem  +  11.25vw , 12.5rem );
+  }
+}
+
+@supports not (margin-top: clamp( 1.25rem , -1rem  +  11.25vw , 12.5rem )) {
+  .item-columns {
+    margin-top: calc(1.25rem + 11.25 * (100vw - 20rem) / 100);
+  }
+}
+
+.item-columns__title {
+  font-family: Cera Pro;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 55px;
+  margin: 0px 0px 30px 0px;
+}
+
+.item-columns__desc {
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0px 0px 45px 0px;
+}
+
+.ages-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+  max-width: 150px;
+}
+
+.ages-block__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Cera Pro;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 43px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ages-block__description_title {
+  font-family: Cera Pro;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ages-block__description_subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.review-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+  max-width: 150px;
+}
+
+.review-block__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Cera Pro;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 43px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-block__description_stars {
+  color: rgb(255, 230, 0);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.review-block__description_text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.right-content {
+  position: relative;
+  background: url("../img/person-background.png") 75px 75px no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.person-block {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  padding: 14px 23px;
+  position: absolute;
+  bottom: 14px;
+  overflow: hidden;
+}
+
+@supports (max-width: clamp( 18.75rem , 17.3375rem  +  7.0625vw , 25.8125rem )) {
+  .person-block {
+    max-width: clamp( 18.75rem , 17.3375rem  +  7.0625vw , 25.8125rem );
+  }
+}
+
+@supports not (max-width: clamp( 18.75rem , 17.3375rem  +  7.0625vw , 25.8125rem )) {
+  .person-block {
+    max-width: calc(18.75rem + 7.0625 * (100vw - 20rem) / 100);
+  }
+}
+
+@supports (left: clamp( -4.875rem , 0.975000075rem  +  -4.8750000625vw , 0.0000000625rem )) {
+  .person-block {
+    left: clamp( -4.875rem , 0.975000075rem  +  -4.8750000625vw , 0.0000000625rem );
+  }
+}
+
+@supports not (left: clamp( -4.875rem , 0.975000075rem  +  -4.8750000625vw , 0.0000000625rem )) {
+  .person-block {
+    left: calc(0.0000000625rem + -4.8750000625 * (100vw - 20rem) / 100);
+  }
+}
+
+.person-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.38)), to(rgba(255, 255, 255, 0.38))), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.16)), to(rgba(255, 255, 255, 0.16)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.38)), -o-linear-gradient(bottom, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.38)), linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16));
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.person-block img {
+  margin: 0px 13px 0px 0px;
+}
+
+.person-block__body {
+  position: relative;
+}
+
+.person-block__title {
+  display: inline-block;
+  margin: 0px 0px 20px 0px;
+  padding: 7px 0px 0px 0px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 7px;
+  font-family: Cera Pro;
+}
+
+.person-block__text {
+  border-top: 0.5px solid rgb(24, 157, 221);
+  padding: 8.5px 0px 0px 0px;
+  font-family: Ubuntu;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.person-block__text span {
+  font-weight: 600;
+}
+
+@supports (margin-top: clamp( 1.875rem , 0.0000000625rem  +  9.375vw , 11.25rem )) {
+  .person-block__image {
+    margin-top: clamp( 1.875rem , 0.0000000625rem  +  9.375vw , 11.25rem );
+  }
+}
+
+@supports not (margin-top: clamp( 1.875rem , 0.0000000625rem  +  9.375vw , 11.25rem )) {
+  .person-block__image {
+    margin-top: calc(1.875rem + 9.375 * (100vw - 20rem) / 100);
+  }
+}
+
+.person-block__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@supports ((-moz-column-gap: clamp( 1.25rem , 0.725rem  +  2.625vw , 3.875rem )) or (column-gap: clamp( 1.25rem , 0.725rem  +  2.625vw , 3.875rem ))) {
+  .bottom-blocks {
+    -webkit-column-gap: clamp( 1.25rem , 0.725rem  +  2.625vw , 3.875rem );
+       -moz-column-gap: clamp( 1.25rem , 0.725rem  +  2.625vw , 3.875rem );
+            column-gap: clamp( 1.25rem , 0.725rem  +  2.625vw , 3.875rem );
+  }
+}
+
+@supports not ((-moz-column-gap: clamp( 1.25rem , 0.725rem  +  2.625vw , 3.875rem )) or (column-gap: clamp( 1.25rem , 0.725rem  +  2.625vw , 3.875rem ))) {
+  .bottom-blocks {
+    -webkit-column-gap: calc(1.25rem + 2.625 * (100vw - 20rem) / 100);
+       -moz-column-gap: calc(1.25rem + 2.625 * (100vw - 20rem) / 100);
+            column-gap: calc(1.25rem + 2.625 * (100vw - 20rem) / 100);
+  }
+}
+
+@supports (margin-bottom: clamp( 3.125rem , 2.625rem  +  2.5vw , 5.625rem )) {
+  .bottom-blocks {
+    margin-bottom: clamp( 3.125rem , 2.625rem  +  2.5vw , 5.625rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 3.125rem , 2.625rem  +  2.5vw , 5.625rem )) {
+  .bottom-blocks {
+    margin-bottom: calc(3.125rem + 2.5 * (100vw - 20rem) / 100);
+  }
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 23px;
+     -moz-column-gap: 23px;
+          column-gap: 23px;
+}
+
+.bottom-section {
+  background: rgb(247, 247, 247);
+}
+
+.bottom-section__container {
+  max-width: 76.875rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bottom-section__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@supports ((-moz-column-gap: clamp( 0.3125rem , -0.9375rem  +  6.25vw , 6.5625rem )) or (column-gap: clamp( 0.3125rem , -0.9375rem  +  6.25vw , 6.5625rem ))) {
+  .bottom-section__items {
+    -webkit-column-gap: clamp( 0.3125rem , -0.9375rem  +  6.25vw , 6.5625rem );
+       -moz-column-gap: clamp( 0.3125rem , -0.9375rem  +  6.25vw , 6.5625rem );
+            column-gap: clamp( 0.3125rem , -0.9375rem  +  6.25vw , 6.5625rem );
+  }
+}
+
+@supports not ((-moz-column-gap: clamp( 0.3125rem , -0.9375rem  +  6.25vw , 6.5625rem )) or (column-gap: clamp( 0.3125rem , -0.9375rem  +  6.25vw , 6.5625rem ))) {
+  .bottom-section__items {
+    -webkit-column-gap: calc(0.3125rem + 6.25 * (100vw - 20rem) / 100);
+       -moz-column-gap: calc(0.3125rem + 6.25 * (100vw - 20rem) / 100);
+            column-gap: calc(0.3125rem + 6.25 * (100vw - 20rem) / 100);
+  }
+}
+
+.item-section {
+  margin: 40px 0px 0px 0px;
+  max-width: 213px;
+}
+
+.item-section__image {
+  position: relative;
+  height: 103px;
+  margin: 0px 0px 24px 0px;
+}
+
+@supports (width: clamp( 4.6875rem , 4.5rem  +  0.9375vw , 5.625rem )) {
+  .item-section__image {
+    width: clamp( 4.6875rem , 4.5rem  +  0.9375vw , 5.625rem );
+  }
+}
+
+@supports not (width: clamp( 4.6875rem , 4.5rem  +  0.9375vw , 5.625rem )) {
+  .item-section__image {
+    width: calc(4.6875rem + 0.9375 * (100vw - 20rem) / 100);
+  }
+}
+
+.item-section__image::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background: rgb(0, 148, 218);
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+          clip-path: polygon(100% 50%, 0 0, 0 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.item-section__image img {
+  position: relative;
+  top: 29px;
+  left: 10px;
+  width: 41px;
+  height: 41px;
+  z-index: 2;
+}
+
+.item-section__text {
+  margin: 0px 0px 50px 0px;
+  font-family: Cera Pro;
+  line-height: 26px;
+}
+
+@supports (font-size: clamp( 1rem , 0.925rem  +  0.375vw , 1.375rem )) {
+  .item-section__text {
+    font-size: clamp( 1rem , 0.925rem  +  0.375vw , 1.375rem );
+  }
+}
+
+@supports not (font-size: clamp( 1rem , 0.925rem  +  0.375vw , 1.375rem )) {
+  .item-section__text {
+    font-size: calc(1rem + 0.375 * (100vw - 20rem) / 100);
+  }
+}
+
+.item-section__text span {
+  font-weight: 700;
+}
+
+@media (max-width: 71.25em) {
+  .top-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (any-hover: hover) {
+  .review-block__description_stars:hover {
+    cursor: pointer;
+  }
+}
+
+.webp .right-content{ background: url(../img/person-background.webp) 75px 75px no-repeat; }
