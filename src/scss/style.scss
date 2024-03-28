@@ -1,0 +1,63 @@
+@use 'sass:math';
+
+@import 'base/mixins';
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+@import 'fonts/fonts';
+
+$fontFamily: 'Ubuntu';
+$fontSize: rem(16);
+
+$mainColor: #000; // Цвет шрифта по умолчанию
+
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1920;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 0;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 20;
+
+//! Обнуление и общие параметры
+
+@import 'base/null';
+
+body {
+  // display: flex;
+  // flex-direction: column;
+
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
+  // Скролл заблокирован
+  &.lock {
+  }
+  // Прижимаем footer
+  > main {
+    //  flex: 1 1 auto;
+    //  overflow: auto;
+  }
+}
+
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+/*
+! (i) Стили будут применяться ко всем классам содержащим *  container
+*/
+[class*=' container'] {
+  @if ($maxWidthContainer>0) {
+    max-width: ($maxWidthContainer) + px;
+    box-sizing: content-box;
+    margin: 0 auto;
+  }
+  @if ($containerPadding>0) {
+    padding: 0 (math.div($containerPadding, 2) + px);
+  }
+}
+
+@import 'home';
