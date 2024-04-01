@@ -4,8 +4,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
 
-@import 'fonts/fonts';
-
 $fontFamily: 'Ubuntu';
 $fontSize: rem(16);
 
@@ -16,7 +14,7 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 0;
+$maxWidthContainer: 1500;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 20;
