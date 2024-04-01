@@ -256,10 +256,6 @@
       line-height: 19px;
       padding-top: 3px;
     }
-
-    span {
-      font-weight: 600;
-    }
   }
 
   &::before {
@@ -350,10 +346,6 @@
     @media (max-width: 1279px) {
       font-size: 16px;
       margin-bottom: 10px;
-    }
-
-    span {
-      font-weight: 700;
     }
   }
 }
