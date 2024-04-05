@@ -33,9 +33,11 @@ body {
   > * {
     min-width: 0;
   }
+
   // Скролл заблокирован
   &.lock {
   }
+
   // Прижимаем footer
   > main {
     //  flex: 1 1 auto;
